@@ -50,15 +50,15 @@
   <!-- HERO -->
   <section class="hero" id="accueil">
     <div class="container hero-inner">
-      <span class="hero-eyebrow">Bonne bouffe. Bonne humeur.</span>
-      <h1>Spanos<br />Restaurant &amp; Pizzeria</h1>
-      <p class="hero-sub">
+      <span class="hero-eyebrow hero-anim" style="--anim-order:0;">Bonne bouffe. Bonne humeur.</span>
+      <h1 class="hero-anim" style="--anim-order:1;">Spanos<br />Restaurant &amp; Pizzeria</h1>
+      <p class="hero-sub hero-anim" style="--anim-order:2;">
         Des saveurs italiennes authentiques, préparées avec passion et des
         ingrédients frais.
         <span class="hero-flag" aria-hidden="true"><span class="flag-green"></span><span class="flag-white"></span><span class="flag-red"></span></span>
         Venez pour la pizza, restez pour l'expérience.
       </p>
-      <div class="hero-actions">
+      <div class="hero-actions hero-anim" style="--anim-order:3;">
         <a href="menu.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg">
           <span class="btn-icon" aria-hidden="true">🍕</span> Voir le menu
         </a>
@@ -72,8 +72,8 @@
   <!-- À PROPOS -->
   <section id="apropos">
     <div class="container about-grid">
-      <img src="images/storefront-night.jpg" alt="Façade du restaurant Spanos, enseigne lumineuse, un soir d'hiver" loading="lazy" />
-      <div class="about-text">
+      <img class="reveal" src="images/storefront-night.jpg" alt="Façade du restaurant Spanos, enseigne lumineuse, un soir d'hiver" loading="lazy" />
+      <div class="about-text reveal-up">
         <span class="kicker" style="font-family:var(--font-script); color:var(--red); font-size:1.3rem; display:block;">Notre histoire</span>
         <h2>Rassemblez. Savourez. Répétez.</h2>
         <p>
@@ -100,7 +100,7 @@
         <p>Un aperçu de ce qui vous attend — le menu complet vous réserve encore plus de découvertes.</p>
       </div>
       <div class="dish-grid">
-        <article class="dish-card">
+        <article class="dish-card reveal-up tilt-3d">
           <div class="dish-photo" aria-hidden="true">🍕</div>
           <div class="dish-card-body">
             <h3>Pizza Margherita</h3>
@@ -108,7 +108,7 @@
             <span class="dish-price">14,95 $</span>
           </div>
         </article>
-        <article class="dish-card">
+        <article class="dish-card reveal-up tilt-3d">
           <div class="dish-photo" aria-hidden="true">🍝</div>
           <div class="dish-card-body">
             <h3>Pâtes Alfredo</h3>
@@ -116,7 +116,7 @@
             <span class="dish-price">16,95 $</span>
           </div>
         </article>
-        <article class="dish-card">
+        <article class="dish-card reveal-up tilt-3d">
           <div class="dish-photo" aria-hidden="true">🥗</div>
           <div class="dish-card-body">
             <h3>Salade Caprese</h3>
@@ -183,7 +183,7 @@
       </div>
 
       <div class="info-grid" id="trouver">
-        <div class="hours-card">
+        <div class="hours-card reveal-up">
           <h3>🕒 Heures d'ouverture</h3>
           <ul class="hours-list" data-hours-list>
             <!-- Rempli automatiquement par script.js -->
@@ -191,7 +191,7 @@
           <p class="hours-note">Horaires à titre indicatif et pouvant varier les jours fériés — appelez-nous pour confirmer avant de vous déplacer.</p>
         </div>
 
-        <div class="map-card">
+        <div class="map-card reveal-up">
           <div class="map-card-body">
             <h3>📍 Notre adresse</h3>
             <div class="address-block">
@@ -225,7 +225,7 @@
 
   <!-- CONTACT -->
   <section class="contact-band" id="contact">
-    <div class="container">
+    <div class="container reveal-up">
       <h2>Réservez votre table</h2>
       <p>Une question, une réservation, un événement privé ? Appelez-nous ou écrivez-nous, notre équipe vous répond avec plaisir.</p>
       <div class="contact-actions">

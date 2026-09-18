@@ -329,10 +329,12 @@ p {
 .hero::after {
   content: "";
   position: absolute;
-  inset: 0;
+  inset: -40px 0;
   background: url("../images/hero-pizza.jpg") center 30% / cover no-repeat;
   opacity: 0.18;
   pointer-events: none;
+  transform: translateY(var(--parallax-y, 0px));
+  will-change: transform;
 }
 .hero-inner {
   position: relative;
@@ -380,6 +382,27 @@ p {
 .flag-green { background: #16543f; }
 .flag-white { background: #ffffff; }
 .flag-red { background: #b3202b; }
+
+/* Entrée en scène du bloc principal, au chargement de la page */
+.hero-anim {
+  opacity: 0;
+  transform: translateY(26px);
+  animation: heroRise 0.8s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  animation-delay: calc(var(--anim-order, 0) * 130ms + 120ms);
+}
+@keyframes heroRise {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-anim {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
 
 /* =========================
    SECTIONS GÉNÉRALES
@@ -586,14 +609,55 @@ section {
 .gallery-mosaic .mosaic-item:nth-child(8) { transition-delay: 490ms; }
 .gallery-mosaic .mosaic-item:nth-child(9) { transition-delay: 560ms; }
 
-/* Respect du réglage "mouvement réduit" du visiteur : on affiche la
-   mosaïque directement, sans animation d'entrée. */
+/* Variante plus sobre : fondu + légère montée, sans tilt 3D — pour le
+   texte et les cartes d'information (les photos gardent le tilt 3D). */
+.reveal-up {
+  opacity: 0;
+  transform: translateY(36px);
+  transition: opacity 0.6s ease, transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-up.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.dish-grid .reveal-up:nth-child(1) { transition-delay: 0ms; }
+.dish-grid .reveal-up:nth-child(2) { transition-delay: 110ms; }
+.dish-grid .reveal-up:nth-child(3) { transition-delay: 220ms; }
+.info-grid .reveal-up:nth-child(1) { transition-delay: 0ms; }
+.info-grid .reveal-up:nth-child(2) { transition-delay: 140ms; }
+
+/* Léger tilt 3D au survol des cartes — accent "moderne" discret */
+.dish-grid {
+  perspective: 1200px;
+}
+.tilt-3d {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  will-change: transform;
+}
+.tilt-3d:hover,
+.tilt-3d:focus-within {
+  transform: perspective(1200px) rotateX(4deg) rotateY(-4deg) translateY(-8px);
+  box-shadow: 0 22px 34px rgba(18, 63, 50, 0.22);
+}
+
+/* Respect du réglage "mouvement réduit" du visiteur : on affiche les
+   éléments directement, sans animation d'entrée ni tilt. */
 @media (prefers-reduced-motion: reduce) {
   .reveal,
-  .reveal.is-visible {
+  .reveal.is-visible,
+  .reveal-up,
+  .reveal-up.is-visible {
     transition: none;
     opacity: 1;
-    transform: rotate(var(--tilt, 0deg));
+  }
+  .reveal { transform: rotate(var(--tilt, 0deg)); }
+  .reveal-up { transform: none; }
+  .tilt-3d:hover,
+  .tilt-3d:focus-within {
+    transform: none;
+  }
+  .hero::after {
+    transform: none !important;
   }
 }
 

@@ -41,6 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupTextSizeControl();
   setupBackToTop();
   setupGalleryReveal();
+  setupHeroParallax();
 });
 
 function populateRestaurantInfo() {
@@ -172,11 +173,12 @@ function setupTextSizeControl() {
   }
 }
 
-/* Galerie « photos éparpillées » : chaque photo s'anime une seule fois,
-   au moment où elle entre dans l'écran en défilant — jamais en boucle,
-   pour rester confortable pour les visiteurs sensibles au mouvement. */
+/* Animations "au défilement" : chaque élément (photo avec tilt 3D ou
+   bloc de texte/carte avec fondu) s'anime une seule fois, au moment où
+   il entre dans l'écran — jamais en boucle, pour rester confortable
+   pour les visiteurs sensibles au mouvement. */
 function setupGalleryReveal() {
-  const items = document.querySelectorAll(".gallery-mosaic .reveal");
+  const items = document.querySelectorAll(".reveal, .reveal-up");
   if (!items.length) return;
 
   const prefersReducedMotion = window.matchMedia(
@@ -200,6 +202,45 @@ function setupGalleryReveal() {
   );
 
   items.forEach((item) => observer.observe(item));
+}
+
+/* Léger effet de parallaxe sur l'image de fond du hero, capé et
+   discret — désactivé pour les visiteurs qui préfèrent moins de
+   mouvement. */
+function setupHeroParallax() {
+  const hero = document.querySelector(".hero");
+  if (!hero) return;
+
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+  if (prefersReducedMotion) return;
+
+  const MAX_SHIFT = 36; // pixels
+  let ticking = false;
+
+  function updateParallax() {
+    const rect = hero.getBoundingClientRect();
+    const progress = Math.min(
+      1,
+      Math.max(0, 1 - rect.bottom / (window.innerHeight + rect.height))
+    );
+    const shift = (progress - 0.5) * 2 * MAX_SHIFT;
+    hero.style.setProperty("--parallax-y", `${shift.toFixed(1)}px`);
+    ticking = false;
+  }
+
+  window.addEventListener(
+    "scroll",
+    () => {
+      if (!ticking) {
+        requestAnimationFrame(updateParallax);
+        ticking = true;
+      }
+    },
+    { passive: true }
+  );
+  updateParallax();
 }
 
 function setupBackToTop() {
