@@ -518,7 +518,7 @@ section {
 /* Galerie — mosaïque façon photos éparpillées, qui s'assemblent au défilement */
 .gallery-mosaic {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 34px 22px;
   padding: 10px 6px 26px;
   perspective: 1400px;
@@ -555,12 +555,8 @@ section {
 .mosaic-item:nth-child(6) { --tilt: 2deg; margin-top: 24px; }
 .mosaic-item:nth-child(7) { --tilt: -3deg; margin-top: -8px; }
 .mosaic-item:nth-child(8) { --tilt: 4deg; margin-top: 16px; }
+.mosaic-item:nth-child(9) { --tilt: 3deg; margin-top: 22px; }
 
-@media (max-width: 980px) {
-  .gallery-mosaic {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 @media (max-width: 640px) {
   .gallery-mosaic {
     grid-template-columns: repeat(2, 1fr);
@@ -588,6 +584,7 @@ section {
 .gallery-mosaic .mosaic-item:nth-child(6) { transition-delay: 350ms; }
 .gallery-mosaic .mosaic-item:nth-child(7) { transition-delay: 420ms; }
 .gallery-mosaic .mosaic-item:nth-child(8) { transition-delay: 490ms; }
+.gallery-mosaic .mosaic-item:nth-child(9) { transition-delay: 560ms; }
 
 /* Respect du réglage "mouvement réduit" du visiteur : on affiche la
    mosaïque directement, sans animation d'entrée. */
