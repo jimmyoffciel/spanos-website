@@ -839,6 +839,139 @@ section {
   }
 }
 
+/* Article de menu avec plusieurs formats (ex. pizzas 10"/12"/14"/18") */
+.menu-item-sizes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 18px;
+  justify-content: flex-end;
+}
+.menu-item-sizes .size {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 42px;
+}
+.menu-item-sizes .size-label {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  color: var(--text-soft);
+  letter-spacing: 0.02em;
+}
+.menu-item-sizes .size-price {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  color: var(--red);
+  white-space: nowrap;
+}
+@media (max-width: 700px) {
+  .menu-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-item-sizes {
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+/* Sous-titre de catégorie (ex. "Croûte originale ou mince") */
+.menu-section-sub {
+  font-size: 0.98rem;
+  color: var(--text-soft);
+  margin: -18px 0 22px;
+  font-style: italic;
+}
+
+/* Bandeau d'avantages (livraison gratuite, apportez votre vin, etc.) */
+.perks-strip {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin: 28px 0 0;
+}
+.perks-strip span {
+  background: rgba(255,255,255,0.14);
+  color: var(--white);
+  font-family: var(--font-heading);
+  letter-spacing: 0.02em;
+  font-size: 0.95rem;
+  padding: 10px 18px;
+  border-radius: 50px;
+  white-space: nowrap;
+}
+.perks-strip.on-light span {
+  background: var(--cream-2);
+  color: var(--green-dark);
+}
+
+/* Boutons de commande en ligne */
+.order-online {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+/* Cartes de promotions */
+.promo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}
+.promo-card {
+  background: var(--cream);
+  border: 2px solid var(--red);
+  border-radius: var(--radius);
+  padding: 26px 28px;
+}
+.promo-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 10px;
+}
+.promo-card p {
+  color: var(--text-soft);
+  font-size: 1rem;
+  margin-bottom: 14px;
+}
+.promo-price {
+  font-family: var(--font-heading);
+  color: var(--red);
+  font-size: 1.4rem;
+}
+.promo-price small {
+  font-size: 0.95rem;
+  color: var(--text-soft);
+  font-family: var(--font-body);
+}
+.promo-combos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 14px;
+  margin-top: 22px;
+}
+.promo-combo {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  border: 1px solid var(--border);
+}
+.promo-combo .combo-price {
+  font-family: var(--font-heading);
+  color: var(--red);
+  font-size: 1.3rem;
+  display: block;
+  margin-bottom: 4px;
+}
+.promo-combo .combo-desc {
+  font-size: 0.92rem;
+  color: var(--text-soft);
+}
+
 .menu-note {
   background: var(--cream-2);
   border-radius: var(--radius);

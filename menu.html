@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
 <title>Menu — Spanos Restaurant Pizzeria</title>
-<meta name="description" content="Découvrez le menu complet de Spanos Restaurant Pizzeria : pizzas, pâtes, entrées, viandes et desserts italiens faits maison." />
+<meta name="description" content="Menu complet de Spanos Restaurant Pizzeria à Repentigny : sandwichs, sous-marins, pizzas, pâtes, poutines, salades et plus. Livraison gratuite." />
 <link rel="icon" type="image/png" href="images/logo-spanos.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -50,50 +50,162 @@
     <div class="container">
       <span class="kicker">Buon appetito</span>
       <h1>Notre menu</h1>
-      <p>Des recettes italiennes authentiques, préparées chaque jour avec des ingrédients frais. Les prix sont indiqués en dollars canadiens et peuvent varier.</p>
+      <p>Pizzas, pâtes, sous-marins, poutines et plus — tout est préparé sur place avec des ingrédients frais. Prix en dollars canadiens, sujets à changement.</p>
+      <div class="perks-strip" aria-label="Avantages">
+        <span>🚗 Livraison gratuite</span>
+        <span>🍷 Apportez votre vin</span>
+        <span>🗓️ Ouvert 7 jours, 11 h – 22 h</span>
+      </div>
+      <div class="order-online">
+        <a href="#" data-order-ubereats class="btn btn-secondary">🛵 Commander sur Uber Eats</a>
+        <a href="#" data-order-doordash class="btn btn-secondary">🛵 Commander sur DoorDash</a>
+        <a href="#" data-phone-link class="btn btn-primary">📞 Commander par téléphone</a>
+      </div>
     </div>
   </section>
 
   <nav class="menu-jump" aria-label="Aller à une section du menu">
-    <a href="#entrees">Entrées</a>
+    <a href="#sandwichs">Sandwichs</a>
+    <a href="#sous-marins">Sous-marins</a>
     <a href="#pizzas">Pizzas</a>
     <a href="#pates">Pâtes</a>
-    <a href="#plats">Plats principaux</a>
+    <a href="#poutines">Poutines</a>
+    <a href="#a-cotes">Les à côtés</a>
+    <a href="#salades">Salades</a>
+    <a href="#wraps">Wraps</a>
+    <a href="#breuvages">Breuvages</a>
     <a href="#desserts">Desserts</a>
-    <a href="#boissons">Boissons</a>
+    <a href="#promos">Promos</a>
   </nav>
 
-  <!-- ENTRÉES -->
-  <section class="menu-section" id="entrees">
+  <!-- SANDWICHS / PANINIS -->
+  <section class="menu-section" id="sandwichs">
     <div class="container">
       <div class="menu-section-title">
-        <span class="icon" aria-hidden="true">🥗</span>
-        <h2>Entrées</h2>
+        <span class="icon" aria-hidden="true">🥪</span>
+        <h2>Sandwichs &amp; Paninis</h2>
       </div>
+      <p class="menu-section-sub">Servis sur pain ciabatta ou baguette.</p>
       <div class="menu-items">
         <div class="menu-item">
-          <span class="menu-item-name">Salade Caprese
-            <span class="menu-item-desc">Tomates fraîches, mozzarella di bufala, basilic, huile d'olive et vinaigre balsamique</span>
+          <span class="menu-item-name">Filet de poulet
+            <span class="menu-item-desc">Filet de poulet assaisonné, aubergines &amp; poivrons rouges marinés, tomates, laitue, mayonnaise</span>
           </span>
-          <span class="menu-item-price">11,95 $</span>
+          <span class="menu-item-price">12,50 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Calamars frits
-            <span class="menu-item-desc">Servis avec une sauce marinara maison</span>
+          <span class="menu-item-name">Poulet pané pesto
+            <span class="menu-item-desc">Escalope de poulet, pesto ou basilic, laitue, fromage chèvre, mayonnaise épicée</span>
           </span>
-          <span class="menu-item-price">13,95 $</span>
+          <span class="menu-item-price">11,50 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Bruschetta al pomodoro
-            <span class="menu-item-desc">Pain grillé, tomates fraîches, ail et basilic</span>
+          <span class="menu-item-name">Poulet pané
+            <span class="menu-item-desc">Escalope de poulet, tomates, laitue, suisse, mayonnaise</span>
           </span>
-          <span class="menu-item-price">9,95 $</span>
+          <span class="menu-item-price">12,50 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Soupe minestrone
-            <span class="menu-item-desc">Légumes de saison mijotés, à l'italienne</span>
+          <span class="menu-item-name">Poulet pané César
+            <span class="menu-item-desc">Escalope de poulet, bacon fumé, laitue, tomates, sauce César</span>
           </span>
-          <span class="menu-item-price">7,95 $</span>
+          <span class="menu-item-price">12,50 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Boulettes
+            <span class="menu-item-desc">Boulettes de viande maison, sauce marinara, flocons de piment rouge, parmesan râpé, basilic</span>
+          </span>
+          <span class="menu-item-price">12,50 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Saucisses italiennes
+            <span class="menu-item-desc">Saucisses italiennes, poivrons et oignons sautés, tomates, laitue, mozzarella, moutarde, mayo épicée</span>
+          </span>
+          <span class="menu-item-price">12,00 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Légumes grillés
+            <span class="menu-item-desc">Légumes grillés variés : poivrons, champignons, aubergines, olives vertes et noires, pesto, mayo, suisse, balsamique</span>
+          </span>
+          <span class="menu-item-price">12,00 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Salami épicé
+            <span class="menu-item-desc">Salami épicé, chou, moutarde</span>
+          </span>
+          <span class="menu-item-price">11,50 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Steak ultime
+            <span class="menu-item-desc">Steak, oignons caramélisés, tomates, roquette, suisse, mayonnaise épicée</span>
+          </span>
+          <span class="menu-item-price">13,50 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Steak capicollo épicé
+            <span class="menu-item-desc">Steak, capicollo, oignons rouges, jalapeños marinés, laitue, tomates, cheddar, mayonnaise épicée</span>
+          </span>
+          <span class="menu-item-price">13,50 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Steak Philly
+            <span class="menu-item-desc">Steak, cheddar fondu, mozzarella, oignons caramélisés</span>
+          </span>
+          <span class="menu-item-price">12,50 $</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOUS-MARINS -->
+  <section class="menu-section" id="sous-marins">
+    <div class="container">
+      <div class="menu-section-title">
+        <span class="icon" aria-hidden="true">🥖</span>
+        <h2>Sous-marins</h2>
+      </div>
+      <p class="menu-section-sub">Tous garnis de laitue, tomates, mozzarella — sauce spéciale maison servie à part.</p>
+      <div class="menu-items">
+        <div class="menu-item">
+          <span class="menu-item-name">Steak</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">17,95 $</span></span>
+            <span class="size"><span class="size-label">15&Prime;</span><span class="size-price">22,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Steak &amp; pepperoni</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">17,95 $</span></span>
+            <span class="size"><span class="size-label">15&Prime;</span><span class="size-price">22,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Combiné
+            <span class="menu-item-desc">Steak, pepperoni, champignons, piments, oignons</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">17,95 $</span></span>
+            <span class="size"><span class="size-label">15&Prime;</span><span class="size-price">22,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Spécial Taki
+            <span class="menu-item-desc">Sous-marin combiné sur pain à pizza</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">17,95 $</span></span>
+            <span class="size"><span class="size-label">15&Prime;</span><span class="size-price">22,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Philly steak
+            <span class="menu-item-desc">Steak à la Philly, oignons caramélisés, cheddar fondu</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">18,95 $</span></span>
+            <span class="size"><span class="size-label">15&Prime;</span><span class="size-price">24,95 $</span></span>
+          </span>
         </div>
       </div>
     </div>
@@ -106,76 +218,491 @@
         <span class="icon" aria-hidden="true">🍕</span>
         <h2>Pizzas</h2>
       </div>
+      <p class="menu-section-sub">Croûte originale ou mince — formats 10&Prime;, 12&Prime;, 14&Prime; et 18&Prime;.</p>
       <div class="menu-items">
         <div class="menu-item">
-          <span class="menu-item-name">Margherita
-            <span class="menu-item-desc">Sauce tomate maison, mozzarella fraîche, basilic</span>
+          <span class="menu-item-name">À l'ail
+            <span class="menu-item-desc">Huile d'olive, mozzarella</span>
           </span>
-          <span class="menu-item-price">14,95 $</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">17,25 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">21,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">29,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">42,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Margherita
+            <span class="menu-item-desc">Sauce tomate, mozzarella, feuilles de basilic</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">17,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">23,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">30,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">43,95 $</span></span>
+          </span>
         </div>
         <div class="menu-item">
           <span class="menu-item-name">Pepperoni
-            <span class="menu-item-desc">Sauce tomate, mozzarella, pepperoni généreux</span>
+            <span class="menu-item-desc">Pepperoni, sauce tomate, mozzarella</span>
           </span>
-          <span class="menu-item-price">16,50 $</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">17,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">23,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">30,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">43,95 $</span></span>
+          </span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Spanos spéciale
-            <span class="menu-item-desc">Pepperoni, champignons, poivrons, oignons, olives</span>
+          <span class="menu-item-name">Toute garnie
+            <span class="menu-item-desc">Pepperoni, champignons, poivrons verts, mozzarella</span>
           </span>
-          <span class="menu-item-price">18,95 $</span>
-        </div>
-        <div class="menu-item">
-          <span class="menu-item-name">Quatre fromages
-            <span class="menu-item-desc">Mozzarella, provolone, parmesan et gorgonzola</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">18,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">24,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">32,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">48,95 $</span></span>
           </span>
-          <span class="menu-item-price">17,50 $</span>
         </div>
         <div class="menu-item">
           <span class="menu-item-name">Végétarienne
-            <span class="menu-item-desc">Poivrons, champignons, oignons, tomates, olives</span>
+            <span class="menu-item-desc">Champignons, piments verts, olives vertes &amp; noires, tomates, oignons</span>
           </span>
-          <span class="menu-item-price">16,95 $</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">18,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">24,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">32,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">48,95 $</span></span>
+          </span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Prosciutto e funghi
-            <span class="menu-item-desc">Prosciutto, champignons frais, mozzarella</span>
+          <span class="menu-item-name">Spéciale Le Gardeur
+            <span class="menu-item-desc">Toute garnie, oignons, bacon, saucisses italiennes</span>
           </span>
-          <span class="menu-item-price">18,50 $</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">22,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">27,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">37,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">56,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Spéciale Repentigny
+            <span class="menu-item-desc">Toute garnie, viande hachée, oignons</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">22,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">27,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">37,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">56,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Amateurs de viande
+            <span class="menu-item-desc">Pepperoni, bacon, saucisses italiennes, mozzarella</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">24,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">30,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">41,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">59,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Filet de poulet
+            <span class="menu-item-desc">Poulet, origan, sauce tomate, mozzarella</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">20,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">26,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">37,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">53,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Ricotta-épinards
+            <span class="menu-item-desc">Pesto, champignons, épinards, tomates, huile d'olive, ricotta</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">19,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">24,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">32,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">48,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Fruits de mer
+            <span class="menu-item-desc">Champignons, crevettes, pétoncles, crabe, sauce tomate &amp; crème</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">23,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">29,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">39,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">56,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Pizzaghetti
+            <span class="menu-item-desc">Toute garnie avec spaghetti bolognaise</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">20,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">26,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">37,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">53,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Grecque
+            <span class="menu-item-desc">Olives, oignons, tomates, origan, sauce tomate, feta</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">20,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">26,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">37,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">53,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Mexicaine
+            <span class="menu-item-desc">Boeuf haché, oignons et piments forts</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">19,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">25,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">31,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">44,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">New Yorkaise
+            <span class="menu-item-desc">Double pepperoni, double mozzarella</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">23,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">29,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">39,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">56,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Sacramento
+            <span class="menu-item-desc">Saucisses italiennes, piments forts, mozzarella</span>
+          </span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">18,95 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">24,95 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">35,95 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">49,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Extra viande ou fromage</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">5,25 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">5,25 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">6,50 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">9,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Extra sauce bolognaise</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">10&Prime;</span><span class="size-price">3,50 $</span></span>
+            <span class="size"><span class="size-label">12&Prime;</span><span class="size-price">3,50 $</span></span>
+            <span class="size"><span class="size-label">14&Prime;</span><span class="size-price">4,50 $</span></span>
+            <span class="size"><span class="size-label">18&Prime;</span><span class="size-price">6,95 $</span></span>
+          </span>
+        </div>
+      </div>
+
+      <div class="promo-grid" style="margin-top:40px;">
+        <div class="promo-card">
+          <h3>Combo Pizza 8&Prime;</h3>
+          <p>Pizzaghetti, PizzaCésar ou PizzaPoutine — une pizza individuelle 8&Prime; combinée à votre choix.</p>
+          <div class="promo-combos">
+            <div class="promo-combo"><span class="combo-price">17,95 $</span><span class="combo-desc">Pizzaghetti</span></div>
+            <div class="promo-combo"><span class="combo-price">18,95 $</span><span class="combo-desc">PizzaCésar</span></div>
+            <div class="promo-combo"><span class="combo-price">18,95 $</span><span class="combo-desc">PizzaPoutine</span></div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PÂTES -->
+  <!-- PÂTES ET SPÉCIALITÉS -->
   <section class="menu-section" id="pates">
     <div class="container">
       <div class="menu-section-title">
         <span class="icon" aria-hidden="true">🍝</span>
-        <h2>Pâtes</h2>
+        <h2>Pâtes &amp; spécialités</h2>
       </div>
       <div class="menu-items">
         <div class="menu-item">
           <span class="menu-item-name">Spaghetti bolognaise
-            <span class="menu-item-desc">Sauce à la viande mijotée longuement, à l'italienne</span>
+            <span class="menu-item-desc">Sauce à la viande</span>
           </span>
-          <span class="menu-item-price">15,95 $</span>
+          <span class="menu-item-price">18,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Spaghetti bolognaise avec boulettes (2)
+            <span class="menu-item-desc">Sauce à la viande maison</span>
+          </span>
+          <span class="menu-item-price">21,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Tortellini rosé
+            <span class="menu-item-desc">Tortellini à la viande, sauce rosée</span>
+          </span>
+          <span class="menu-item-price">22,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Lasagne ou rigatoni au four
+            <span class="menu-item-desc">Choix gratiné au four, sauce à la viande, mozzarella</span>
+          </span>
+          <span class="menu-item-price">18,25 $</span>
         </div>
         <div class="menu-item">
           <span class="menu-item-name">Fettuccine Alfredo
-            <span class="menu-item-desc">Crème onctueuse, parmesan et poulet grillé</span>
+            <span class="menu-item-desc">Fettuccine, crème épaisse, parmesan, persil, ail</span>
+          </span>
+          <span class="menu-item-price">20,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Fettuccine fruits de mer</span>
+          <span class="menu-item-price">28,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Spaghetti carbonara
+            <span class="menu-item-desc">Spaghetti, pancetta, fromage romano, oeufs</span>
+          </span>
+          <span class="menu-item-price">23,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Penne arrabbiata
+            <span class="menu-item-desc">Penne, huile d'olive extra vierge, ail et flocons de piment rouge</span>
+          </span>
+          <span class="menu-item-price">22,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Gnocchi rosé
+            <span class="menu-item-desc">Sauce tomate crémeuse, parmesan, basilic</span>
+          </span>
+          <span class="menu-item-price">23,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Cannelloni au four
+            <span class="menu-item-desc">Sauce tomate maison, mozzarella</span>
+          </span>
+          <span class="menu-item-price">20,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Manicotti au four
+            <span class="menu-item-desc">Fromage ricotta, sauce tomate maison, mozzarella</span>
+          </span>
+          <span class="menu-item-price">22,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Poulet ou veau parmesan
+            <span class="menu-item-desc">Escalope panée, parmesan râpé, mozzarella, basilic, spaghetti sauce tomate</span>
+          </span>
+          <span class="menu-item-price">24,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Poulet sauté au vin blanc
+            <span class="menu-item-desc">Poulet sauté au vin, champignons, poivrons verts, oignons, crème blanche sur spaghetti</span>
+          </span>
+          <span class="menu-item-price">26,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Coquilles St-Jacques
+            <span class="menu-item-desc">Fruits de mer, champignons, crème, servi avec salade César</span>
+          </span>
+          <span class="menu-item-price">26,95 $</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POUTINES -->
+  <section class="menu-section" id="poutines">
+    <div class="container">
+      <div class="menu-section-title">
+        <span class="icon" aria-hidden="true">🍟</span>
+        <h2>Poutines</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <span class="menu-item-name">Traditionnelle</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">P</span><span class="size-price">10,95 $</span></span>
+            <span class="size"><span class="size-label">M</span><span class="size-price">12,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Italienne</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">P</span><span class="size-price">11,95 $</span></span>
+            <span class="size"><span class="size-label">M</span><span class="size-price">13,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Poulet</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">P</span><span class="size-price">13,25 $</span></span>
+            <span class="size"><span class="size-label">M</span><span class="size-price">15,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Poulet croustillant</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">P</span><span class="size-price">13,25 $</span></span>
+            <span class="size"><span class="size-label">M</span><span class="size-price">16,25 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Fromage en grains frits</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">P</span><span class="size-price">16,95 $</span></span>
+            <span class="size"><span class="size-label">M</span><span class="size-price">18,95 $</span></span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LES À CÔTÉS -->
+  <section class="menu-section" id="a-cotes">
+    <div class="container">
+      <div class="menu-section-title">
+        <span class="icon" aria-hidden="true">🍤</span>
+        <h2>Les à côtés</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <span class="menu-item-name">Soupe du jour</span>
+          <span class="menu-item-price">4,25 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Entrée calmars</span>
+          <span class="menu-item-price">14,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Ailes de poulet</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">1 lb</span><span class="size-price">18,25 $</span></span>
+            <span class="size"><span class="size-label">2 lb</span><span class="size-price">34,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Frites</span>
+          <span class="menu-item-price">5,25 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Frites familiale</span>
+          <span class="menu-item-price">13,25 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Frites patates douces</span>
+          <span class="menu-item-price">6,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Frites patates julienne</span>
+          <span class="menu-item-price">6,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Rondelles d'oignons</span>
+          <span class="menu-item-price">8,75 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Fromage en grains frits</span>
+          <span class="menu-item-price">10,25 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Bâtonnets de fromage (6)</span>
+          <span class="menu-item-price">6,25 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Piments jalapeño (3)</span>
+          <span class="menu-item-price">7,25 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Pain à l'ail gratiné</span>
+          <span class="menu-item-price">6,25 $</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SALADES -->
+  <section class="menu-section" id="salades">
+    <div class="container">
+      <div class="menu-section-title">
+        <span class="icon" aria-hidden="true">🥗</span>
+        <h2>Salades</h2>
+      </div>
+      <div class="menu-items">
+        <div class="menu-item">
+          <span class="menu-item-name">César</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">P</span><span class="size-price">10,95 $</span></span>
+            <span class="size"><span class="size-label">M</span><span class="size-price">14,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Grecque</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">P</span><span class="size-price">12,95 $</span></span>
+            <span class="size"><span class="size-label">M</span><span class="size-price">16,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">César avec filet de poulet</span>
+          <span class="menu-item-sizes">
+            <span class="size"><span class="size-label">P</span><span class="size-price">16,95 $</span></span>
+            <span class="size"><span class="size-label">M</span><span class="size-price">22,95 $</span></span>
+          </span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Roquette
+            <span class="menu-item-desc">Parmesan, pacanes rôties, olives vertes et noires, vinaigrette balsamique aux herbes</span>
           </span>
           <span class="menu-item-price">16,95 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Penne all'arrabbiata
-            <span class="menu-item-desc">Sauce tomate relevée, piment fort et ail</span>
+          <span class="menu-item-name">Grecque authentique
+            <span class="menu-item-desc">Tomates, concombre, oignons rouges, olives kalamata, feta, vinaigrette balsamique</span>
           </span>
-          <span class="menu-item-price">14,95 $</span>
+          <span class="menu-item-price">22,95 $</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WRAPS -->
+  <section class="menu-section" id="wraps">
+    <div class="container">
+      <div class="menu-section-title">
+        <span class="icon" aria-hidden="true">🌯</span>
+        <h2>Wraps</h2>
+      </div>
+      <p class="menu-section-sub">Servis avec frites.</p>
+      <div class="menu-items">
+        <div class="menu-item">
+          <span class="menu-item-name">Poulet pané César
+            <span class="menu-item-desc">Salade César, laitue, bacon et fromage tex-mex</span>
+          </span>
+          <span class="menu-item-price">16,95 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Lasagne maison
-            <span class="menu-item-desc">Boeuf, sauce tomate, béchamel et fromages gratinés</span>
+          <span class="menu-item-name">Poulet pané classique
+            <span class="menu-item-desc">Laitue, tomates, mayo</span>
+          </span>
+          <span class="menu-item-price">16,95 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Steak
+            <span class="menu-item-desc">Laitue, oignons, mayo, tomates, fromage tex-mex</span>
           </span>
           <span class="menu-item-price">17,95 $</span>
         </div>
@@ -183,37 +710,33 @@
     </div>
   </section>
 
-  <!-- PLATS PRINCIPAUX -->
-  <section class="menu-section" id="plats">
+  <!-- BREUVAGES -->
+  <section class="menu-section" id="breuvages">
     <div class="container">
       <div class="menu-section-title">
-        <span class="icon" aria-hidden="true">🍗</span>
-        <h2>Plats principaux</h2>
+        <span class="icon" aria-hidden="true">🥤</span>
+        <h2>Breuvages</h2>
       </div>
       <div class="menu-items">
         <div class="menu-item">
-          <span class="menu-item-name">Poulet parmesan
-            <span class="menu-item-desc">Escalope panée, sauce tomate, mozzarella gratinée, servi avec pâtes</span>
-          </span>
-          <span class="menu-item-price">19,95 $</span>
+          <span class="menu-item-name">Boisson gazeuse (canette)</span>
+          <span class="menu-item-price">2,75 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Veau à la milanaise
-            <span class="menu-item-desc">Escalope de veau panée, citron, servie avec légumes du jour</span>
-          </span>
-          <span class="menu-item-price">22,95 $</span>
+          <span class="menu-item-name">Brio</span>
+          <span class="menu-item-price">3,75 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Saumon grillé
-            <span class="menu-item-desc">Sauce citron et herbes fraîches, légumes de saison</span>
-          </span>
-          <span class="menu-item-price">21,95 $</span>
+          <span class="menu-item-name">Café</span>
+          <span class="menu-item-price">2,50 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Calzone maison
-            <span class="menu-item-desc">Jambon, champignons et mozzarella, plié et doré au four</span>
-          </span>
-          <span class="menu-item-price">16,95 $</span>
+          <span class="menu-item-name">Thé</span>
+          <span class="menu-item-price">2,50 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Chocolat chaud</span>
+          <span class="menu-item-price">2,50 $</span>
         </div>
       </div>
     </div>
@@ -228,59 +751,78 @@
       </div>
       <div class="menu-items">
         <div class="menu-item">
-          <span class="menu-item-name">Tiramisu maison
-            <span class="menu-item-desc">Mascarpone, café espresso et cacao</span>
-          </span>
+          <span class="menu-item-name">Trois mousses au chocolat</span>
+          <span class="menu-item-price">6,75 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Cheesecake aux framboises</span>
           <span class="menu-item-price">7,95 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Panna cotta
-            <span class="menu-item-desc">Coulis de fruits rouges</span>
-          </span>
-          <span class="menu-item-price">6,95 $</span>
+          <span class="menu-item-name">Gâteau au chocolat à l'ancienne</span>
+          <span class="menu-item-price">6,75 $</span>
         </div>
         <div class="menu-item">
-          <span class="menu-item-name">Cannoli siciliani
-            <span class="menu-item-desc">Ricotta sucrée, brisures de chocolat</span>
-          </span>
-          <span class="menu-item-price">6,50 $</span>
+          <span class="menu-item-name">Gâteau aux carottes</span>
+          <span class="menu-item-price">7,45 $</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name">Tiramisu</span>
+          <span class="menu-item-price">6,75 $</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- BOISSONS -->
-  <section class="menu-section" id="boissons">
+  <!-- PROMOS -->
+  <section class="menu-section" id="promos">
     <div class="container">
       <div class="menu-section-title">
-        <span class="icon" aria-hidden="true">🥤</span>
-        <h2>Boissons</h2>
+        <span class="icon" aria-hidden="true">⭐</span>
+        <h2>Promos Spanos</h2>
       </div>
-      <div class="menu-items">
-        <div class="menu-item">
-          <span class="menu-item-name">Boissons gazeuses</span>
-          <span class="menu-item-price">2,95 $</span>
+      <div class="promo-grid">
+        <div class="promo-card">
+          <h3>2 pizzas + spaghetti bolognaise</h3>
+          <p>Pepperoni, végé ou toute garnie — accompagnées d'un spaghetti bolognaise et d'une frite familiale.</p>
+          <div class="promo-price">57,95 $ <small>moyennes</small></div>
+          <div class="promo-price">66,95 $ <small>larges</small></div>
+          <p style="margin-top:12px;">Ajoutez 3 liqueurs pour 5,75 $ de plus.</p>
         </div>
-        <div class="menu-item">
-          <span class="menu-item-name">Eau pétillante San Pellegrino</span>
-          <span class="menu-item-price">3,95 $</span>
+        <div class="promo-card">
+          <h3>Super spéciaux</h3>
+          <p>Choix de pizza pepperoni, toute garnie ou végé.</p>
+          <div class="promo-combos">
+            <div class="promo-combo"><span class="combo-price">32,75 $</span><span class="combo-desc">2 petites</span></div>
+            <div class="promo-combo"><span class="combo-price">42,75 $</span><span class="combo-desc">2 moyennes</span></div>
+            <div class="promo-combo"><span class="combo-price">59,75 $</span><span class="combo-desc">2 larges</span></div>
+            <div class="promo-combo"><span class="combo-price">89,75 $</span><span class="combo-desc">2 jumbos</span></div>
+          </div>
         </div>
-        <div class="menu-item">
-          <span class="menu-item-name">Café espresso</span>
-          <span class="menu-item-price">3,25 $</span>
+        <div class="promo-card">
+          <h3>Combos rapides</h3>
+          <p>Avec frites et liqueur incluses.</p>
+          <div class="promo-combos">
+            <div class="promo-combo"><span class="combo-price">10,95 $</span><span class="combo-desc">Sous-marin 10&Prime;</span></div>
+            <div class="promo-combo"><span class="combo-price">9,95 $</span><span class="combo-desc">Pizza 6&Prime;</span></div>
+            <div class="promo-combo"><span class="combo-price">8,95 $</span><span class="combo-desc">Spaghetti + pain à l'ail</span></div>
+            <div class="promo-combo"><span class="combo-price">7,95 $</span><span class="combo-desc">4 doigts de poulet</span></div>
+          </div>
         </div>
-        <div class="menu-item">
-          <span class="menu-item-name">Vin de la maison (verre)</span>
-          <span class="menu-item-price">8,95 $</span>
+        <div class="promo-card">
+          <h3>Midi Express</h3>
+          <p>En salle à manger, du lundi au vendredi, 11 h à 14 h. Avec soupe, café et dessert inclus.</p>
+          <div class="promo-price">18 $ <small>taxes incluses</small></div>
         </div>
       </div>
 
       <p class="menu-note" style="margin-top:40px;">
-        <strong>Nota bene :</strong> ce menu est fourni à titre indicatif et sera
-        mis à jour avec les plats, descriptions et prix exacts du restaurant.
-        Des frais supplémentaires peuvent s'appliquer pour les extras. Pour
-        toute allergie ou restriction alimentaire, veuillez en informer notre
-        équipe.
+        <strong>Nota bene :</strong> ce menu a été retranscrit à partir du menu
+        papier du restaurant Spanos. Les prix, disponibilités et promotions
+        peuvent changer sans préavis — merci de confirmer les détails au
+        <a href="#" data-phone-link style="color:var(--red); font-weight:700;"><span data-phone-display>—</span></a>
+        avant de passer votre commande. Pour toute allergie ou restriction
+        alimentaire, veuillez en informer notre équipe.
       </p>
     </div>
   </section>
@@ -299,7 +841,11 @@
           <img src="images/logo-spanos.png" alt="Logo Spanos" />
           <span>Spanos Restaurant &amp; Pizzeria</span>
         </div>
-        <p>Cuisine italienne authentique, faite avec passion, au coeur de votre quartier.</p>
+        <p>Cuisine italienne authentique, faite avec passion, au coeur de Repentigny.</p>
+        <div class="perks-strip on-light" style="justify-content:flex-start; margin-top:16px;">
+          <span>🚗 Livraison gratuite</span>
+          <span>🍷 Apportez votre vin</span>
+        </div>
       </div>
       <div class="footer-col">
         <h4>Navigation</h4>

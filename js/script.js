@@ -15,8 +15,8 @@ const RESTAURANT = {
   phoneDisplay: "(450) 585-4444",
   phoneHref: "+14505854444",
   email: "info@spanosrestaurant.ca",
-  // Horaires approximatifs (source publique) — à confirmer et ajuster
-  // jour par jour au besoin.
+  // Horaires confirmés directement par le propriétaire : fermeture à 22h,
+  // 7 jours sur 7 (le menu papier affichait 23h mais n'était plus à jour).
   hours: [
     { day: "Lundi", hours: "11 h 00 – 22 h 00" },
     { day: "Mardi", hours: "11 h 00 – 22 h 00" },
@@ -26,6 +26,13 @@ const RESTAURANT = {
     { day: "Samedi", hours: "11 h 00 – 22 h 00" },
     { day: "Dimanche", hours: "11 h 00 – 22 h 00" },
   ],
+  // Liens de commande en ligne (fiches confirmées des plateformes)
+  orderLinks: {
+    uberEats:
+      "https://www.ubereats.com/ca/store/restaurant-pizzeria-spanos-481c-boulevard-lacombe/mmIQHeAgUI6xMu_-8XINiA",
+    doorDash:
+      "https://www.doordash.com/store/restaurant-pizzeria-spanos-repentigny-37369335/",
+  },
 };
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -67,6 +74,18 @@ function populateRestaurantInfo() {
     encodeURIComponent(RESTAURANT.fullAddress);
   document.querySelectorAll("a[data-gps-link]").forEach((el) => {
     el.href = mapsDirectionsUrl;
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+  });
+
+  // Liens "commander en ligne" (UberEats / DoorDash)
+  document.querySelectorAll("a[data-order-ubereats]").forEach((el) => {
+    el.href = RESTAURANT.orderLinks.uberEats;
+    el.target = "_blank";
+    el.rel = "noopener noreferrer";
+  });
+  document.querySelectorAll("a[data-order-doordash]").forEach((el) => {
+    el.href = RESTAURANT.orderLinks.doorDash;
     el.target = "_blank";
     el.rel = "noopener noreferrer";
   });
