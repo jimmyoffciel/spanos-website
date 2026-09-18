@@ -40,6 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setupNavToggle();
   setupTextSizeControl();
   setupBackToTop();
+  setupGalleryReveal();
 });
 
 function populateRestaurantInfo() {
@@ -169,6 +170,36 @@ function setupTextSizeControl() {
   function applyScale() {
     root.style.setProperty("--text-scale", scale.toFixed(2));
   }
+}
+
+/* Galerie « photos éparpillées » : chaque photo s'anime une seule fois,
+   au moment où elle entre dans l'écran en défilant — jamais en boucle,
+   pour rester confortable pour les visiteurs sensibles au mouvement. */
+function setupGalleryReveal() {
+  const items = document.querySelectorAll(".gallery-mosaic .reveal");
+  if (!items.length) return;
+
+  const prefersReducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+  if (prefersReducedMotion || !("IntersectionObserver" in window)) {
+    items.forEach((item) => item.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("is-visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.2, rootMargin: "0px 0px -60px 0px" }
+  );
+
+  items.forEach((item) => observer.observe(item));
 }
 
 function setupBackToTop() {
